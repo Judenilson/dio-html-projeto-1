@@ -5,58 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <style>
+      body{
+         background-color: rgb(154, 138, 255);
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;         
+         padding: 40px;
+      }
+      a{
+         text-decoration: none;
+         color: rgb(66, 0, 189);
+      }
+      a:hover{         
+         font-weight: bold;
+         color: rgb(66, 0, 189);
+      }
+      .voltar:hover{
+         text-decoration: overline;      
+      }
+      </style>
 </head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+<body id="top">
+   <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+   <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+   <h2 >Índice</h2>
+   <ul>
+      <li><a href="#basic">Estrutura Básica do HTML</a></li>
+      <li><a href="#textFormatting">Formatação de Texto</a></li>
+      <li><a href="#heading">Parágrafos e Cabeçalhos</a></li>
+      <li><a href="#list">Listas HTML</a></li>
+      <li><a href="#ref">Links de referências</a></li>      
+      <li><a href="about.html">Sobre a atividade</a></li>
+   </ul>
+   <hr />
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="basic">Estrutura Básica do HTML</h2>
+   <p>Um <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> básico é composto por tags que marcam o conteúdo do arquivo de acordo com os padrões da Linguagem de Marcação de HiperTexto.<br>
+    Veremos essas tags básicas e sua aplicação logo abaixo.</p>
+   <ul>   
+      <li><strong>&lt;!DOCTYPE html&gt;</strong> - Esta declaração define que este documento é um documento HTML5</li>
+      <li><strong>&lt;html&gt;</strong> - Este é o elemento raiz de uma página HTML</li>
+      <li><strong>&lt;head&gt;</strong> - Este contém metainformações sobre a página HTML</li>
+      <li><strong>&lt;title&gt;</strong> - Este especifica um título para a página HTML (que é mostrado na barra de título do navegador ou na guia da página)</li>
+      <li><strong>&lt;body&gt;</strong> - Este define o corpo do documento e é um recipiente para todo o conteúdo visível, como cabeçalhos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
+   </ul>
+   <p>Todas essas tags precisam ser fechadas com uma barra e o nome da tag, após o conteúdo. Exceto a declaração do tipo do documento. Por exemplo a tag <strong>&lt;body&gt;</strong> deve ter a tag de fechamento <strong>&lt;/body&gt;</strong> logo após a finalização dos dados que pertencem a essa marcação.</p>
+   <p><strong><u>Dica!</u></strong> Caso você use o Visual Studio Code, você poderá utilizar o comando <strong><i>HTML:5</i></strong> a fim de que o aplicativo crie automaticamente para você um padrão HTML 5 de inicialização, como o que segue abaixo.</p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   &lt;!DOCTYPE html&gt;</body><br>
+   &lt;html lang="en"&gt;<br>
+   &lt;head&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Document&lt;/title&gt;<br>
+   &lt;/head&gt;<br>
+   &lt;body&gt;<br><br>
+      
+   &lt;/body&gt;<br>
+   &lt;/html&gt;<br>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <p><a href="#top" class="voltar"><small>| Voltar para o Topo |</small></a></p>   
+   <hr />
+    
+   <h2 id="textFormatting">Formatação de Texto</h2>
+   <p>As Tags para formatação de texto são muito utilizadas e geralmente precisam ser fechadas, para delimitar os caracteres do texto que sofrerão as alterações desejadas.</p>
+   <p>Segue abaixo algumas tags mais comuns como exemplo, já aplicadas no texto que as define.</p>
+   <ul>
+      <li>&lt;b&gt; - <b>Negrito sem qualquer importância</b></li>
+      <li>&lt;strong&gt; - <strong>Negrito com forte importância</strong></li>
+      <li>&lt;i&gt; - <i>Itálico</i></li>
+      <li>&lt;em&gt; - <em>Itálico também, mas um leitor de tela pronunciará com ênfase.</em></li>
+      <li>&lt;u&gt; - <u>Sublinhado, representando um texto  não articulado com estilo diferente do texto normal.</u></li>
+      <li>&lt;ins&gt; - <ins>Sublinado, porém define um texto que foi inserido no documento.</ins></li>
+      <li>&lt;mark&gt; - <mark>Marcado</mark></li>
+      <li>&lt;small&gt; - <small>Pequeno</small></li>
+      <li>&lt;del&gt; - <del>Riscado</del></li>
+      <li>&lt;sub&gt; - <sub>Subscrito</sub></li>
+      <li>&lt;sup&gt; - <sup>Sobrescrito</sup></li>
+   </ul>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <p>A tag <strong>&lt;font&gt;</strong> não é mais utilizada a partir do HTML5, embora essa tag pudesse ter a capacidade de mudar o estilo da fonte, o tamanho, e a cor do texto ela foi descontinuada. Deixando a função apenas para o CSS.</p>
+   
+   <p><a href="#top" class="voltar"><small>| Voltar para o Topo |</small></a></p>
+   <hr />
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="heading">Parágrafos e Cabeçalhos</h2>
+   <p>O uaso de tags para delimitar parágrafos e cabeçalhos também é bem comum. As tags de cabeçalho são <strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; e &lt;h6&gt;</strong>. Elas vem predefidas com tamanhos específicos que podem ser alterados através da folha de estilos <i>(CSS)</i>, segue abaixo as respectivas formatações.
+    </p>
+   <h1>Cabeçalho 1</h1>
+   <h2>Cabeçalho 2</h2>
+   <h3>Cabeçalho 3</h3>
+   <h4>Cabeçalho 4</h4>
+   <h5>Cabeçalho 5</h5>
+   <h6>Cabeçalho 6</h6>
+    Já para a delimitação de parágrafos, basta apenas colocar as tags <strong>&lt;p&gt;</strong> no início e <strong>&lt;/p&gt;</strong> no final do texto.
+   <p><a href="#top" class="voltar"><small>| Voltar para o Topo |</small></a></p>
+   <hr />
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+   <h2 id="list">Listas HTML</h2>
+   <p>No HTML temos três tipos de listas que podem ser marcadas para exibição. Dentre elas estão as Listas Não Ordenadas <i>(Unordered HTML List)</i>, Listas Ordenadas <i>(Ordered HTML List)</i> e as Listas de Descrição <i>(HTML Description Lists)</i>.</p>
+   <p>As listas Ordenadas e Não Ordenadas tem um arranjo parecido, mudando apenas a tag inicial e final, de acordo com a lista específica que se dejesa visualizar. Mantendo a semelhança enter a tag <strong>&lt;li&gt;</strong> usada para cada item.</p>
+   <h4>Exemplo de Lista Ordenada, percebe-se que ela enumera a lista. (Tag <strong>&lt;ol&gt;</strong>)</h4>
+   <ol>
+      <li>Cachorro</li>
+      <li>Gato</li>
+      <li>Papagaio</li>
+   </ol>
+   <h4>Código: </h4>
+   &lt;ol&gt;</html><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Cachorro&lt;/li&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Gato&lt;/li&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Papagaio&lt;/li&gt;<br>
+   &lt;/ol&gt;
 
+   <h4>Exemplo de Lista Não Ordenada, nesse caso a lista tem apenas símbolos em cada item. (Tag <strong>&lt;ul&gt;</strong>)</h4>
+   <ul>
+      <li>Cachorro</li>
+      <li>Gato</li>
+      <li>Papagaio</li>
+   </ul>
+   <h4>Código: </h4>
+   &lt;ul&gt;</html><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Cachorro&lt;/li&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Gato&lt;/li&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Papagaio&lt;/li&gt;<br>
+   &lt;/ul&gt;
+
+   <h4>Exemplo de Lista de Descrição, ela contem termos que são descritos um por um. (Tags <strong>&lt;dl&gt;, &lt;dt&gt;, &lt;dh&gt;</strong>)</h4>
+   <dl>
+   <dt>Cachorro</dt>
+   <dd>Melhor amigo do homem</dd>
+   <dt>Gato</dt>
+   <dd>Adora ficar em lugares altos</dd>
+   </dl>
+   <h4>Código: </h4>
+   &lt;dl&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Cachorro&lt;/dt&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Melhor amigo do homem&lt;/dd&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Gato&lt;/dt&gt;<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Adora ficar em lugares altos&lt;/dd&gt;<br>
+   &lt;/dl&gt;
+
+   <p><a href="#top" class="voltar"><small>| Voltar para o Topo |</small></a></p>
+   <hr />
+
+   <h2 id="ref">Links de referências</h2>
+   <ul>
+      <li><a href="http://dio.me" target="_blank" >DIO</a></li>
+      <li><a href="http://w3c.org">W3C</a></li>
+      <li><a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank" alt="W3Schools">W3 Schools</a></li>
+      <li><a href="https://judenilson.com.br" target="_blank">Meu Site Pessoal</a></li>
+   </ul>
+
+   <blockquote><small>Página desenvolvida por Judenilson Araujo Silva como exercício para a DIO.</small></blockquote>
 </body>
 </html>
